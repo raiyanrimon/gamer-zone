@@ -154,42 +154,94 @@ span {
     line-height: 30px;
     padding-top: 35px;
 }
-/* catergory section */
-.category{
-  margin: 50px 20px 50px 50px;
+
+/* ad section  */
+.ad-section {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 
 }
-.category-content:hover{
+
+.ad-text {
+    text-align: center;
+    width: 50%;
+
+}
+
+.ad-text h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+}
+
+.ad-text p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 400px;
+    margin-left: 170px;
+    text-align: center;
+}
+
+.ad-img {
+    width: 50%;
+    position: relative;
+}
+
+.small-img {
+    position: absolute;
+bottom: -50px;
+left: -80px;
+
+    
+}
+
+/* catergory section */
+.category {
+    margin: 80px 20px 50px 50px;
+
+}
+
+.category-content:hover {
     border: 2px solid #FF42A5;
     border-radius: 50px;
 }
-.grid1{
+
+.grid1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding-left: 30px;
-   
+
 }
-.grid2{
+
+.grid2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-left: 80px;
 }
-.category-content{
-background: #FFF;
-display: flex;
-padding:10px 5px;
-align-items: center;
-justify-content: center;
-border-radius: 50%;
+
+.category-content {
+    background: #FFF;
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
-.category-content img{
-width: 60px;
-height: 60px;
+
+.category-content img {
+    width: 60px;
+    height: 60px;
 }
-.category-content p{
+
+.category-content p {
     color: #0B0223;
-font-size: 16px;
-font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 
@@ -268,7 +320,8 @@ footer {
 @media screen and (max-width:576px) {
 
     .nav-container,
-    .nav-items-container, .footer-text {
+    .nav-items-container,
+    .footer-text, .ad-section{
         flex-direction: column;
     }
 
@@ -338,51 +391,99 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 0;
     }
-.footer-container img{
-    width: fit-content;
-}
-    .footer-container p{
+
+    .footer-container img {
+        width: fit-content;
+    }
+
+    .footer-container p {
         font-size: 30px;
     }
-    .footer-anchor a{
+
+    .footer-anchor a {
         font-size: 18px;
-    gap: 15px;
-    text-align: center;
-      margin: 10px 5px;
+        gap: 15px;
+        text-align: center;
+        margin: 10px 5px;
     }
+
     .footer-text {
         margin-top: 0px;
         gap: 5px;
     }
-    .footer-text p{
-        margin:10px 5px;
+
+    .footer-text p {
+        margin: 10px 5px;
     }
-    .category{
+
+    .category {
         margin: 0 auto;
     }
-    .grid1{
+
+    .grid1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0px;
-       
+
     }
-    .grid2{
+
+    .grid2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0px;
     }
-    .category-content p{
-    font-size: 12px;
+
+    .category-content p {
+        font-size: 12px;
+    }
+    .ad-section{
+        margin: 0 auto;
+    }
+    .ad-text {
+        text-align: center;
+     width: 100%;
+     margin: 0 auto;
+    }
+    .ad-text h3{
+font-size: 30px;
+font-weight: 700;
+padding: 10px 35px;
+text-align: center;
+margin-left: 20px;
+    }
+    .ad-text p{
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+padding: 10px 15px;
+margin: 0;
+text-align: center;
+    }
+    .ad-img {
+        position: relative;
+        max-width: 400px;
+        width: 100% ;
+    }
+    
+    .small-img {
+        position: absolute;
+    bottom: -10px;
+    left: -20px;
+    width: 150px;
+    
+        
     }
 }
 
 
 /* responsive tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .nav-container {
+    .nav-container, .ad-section {
         flex-direction: column;
     }
-
+.ad-text p{
+    margin: 0 auto;
+}
     .banner-container {
         flex-direction: column-reverse;
         margin-top: 50px;
@@ -409,17 +510,36 @@ footer {
         gap: 15px;
 
     }
-    .footer-container img{
+
+    .footer-container img {
         width: fit-content;
     }
-    .category{
+
+    .category {
         margin: 0 auto;
     }
-    .grid1{
+
+    .grid1 {
+        padding: auto;
+        
+    }
+
+    .grid2 {
         padding: auto;
     }
-    .grid2{
-        padding: auto;
+    .ad-img {
+        position: relative;
+        width: 100% ;
+        max-width: fit-content;
+    }
+    
+    .small-img {
+        position: absolute;
+    bottom: -10px;
+    left: -20px;
+    width: 200px;
+    
+        
     }
 
 }
